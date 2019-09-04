@@ -19,8 +19,8 @@ function RenderComments({ dish }) {
   if (dish != null) {
     const comment = dish.comments.map(comments => {
       return (
-        <div key={dish.comments.id}>
-          <li key={dish.comments.id}>
+        <div>
+          <li key={dish.id}>
             <p>{comments.comment}</p>
             <p>
               --{comments.author},{" "}
