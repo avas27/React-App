@@ -6,10 +6,11 @@ import { LEADERS } from "./shared/leaders";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Menu from "./MenuComponent";
 import Contact from "./ContactComponent";
+import About from "./AboutComponent";
 import DishDetail from "./DishdetailComponent";
 import Header from "./HeaderComponent";
 import Footer from "./FooterComponent";
-import Home from "./HomePage";
+import Home from "./HomeComponent";
 import { Route, Switch, Redirect } from "react-router-dom";
 
 class Main extends Component {
@@ -53,6 +54,11 @@ class Main extends Component {
         <Switch>
           <Route path="/home" component={HomePage}></Route>
           <Route exact path="/contactus" component={Contact}></Route>
+          <Route
+            exact
+            path="/aboutus"
+            component={() => <About leaders={this.state.leaders} />}
+          ></Route>
           <Route
             exact
             path="/menu"
