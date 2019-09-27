@@ -1,8 +1,4 @@
 import React, { Component } from "react";
-import { DISHES } from "./shared/dishes";
-import { COMMENTS } from "./shared/comments";
-import { PROMOTIONS } from "./shared/promotions";
-import { LEADERS } from "./shared/leaders";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Menu from "./MenuComponent";
 import Contact from "./ContactComponent";
